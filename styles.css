@@ -4,6 +4,127 @@
   box-sizing: border-box;
 }
 
+:root {
+  --black: #141414;
+  --white: #e5e5e5;
+}
+
 body {
   font-family: "Poppins", sans-serif;
+  background-color: var(--black);
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 2rem;
+}
+
+.main-header {
+  overflow: hidden;
+  height: 70px;
+  background-color: var(--black);
+}
+.main-header .container {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 40px;
+  height: inherit;
+}
+.main-header img {
+  width: auto;
+  height: 100px;
+}
+
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+}
+.navbar ul {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.navbar ul li a {
+  color: var(--white);
+  font-size: 14px;
+  text-decoration: none;
+  transition: 0.3s ease;
+}
+
+.navbar ul li.active a {
+  font-weight: 600;
+  font-size: 15px;
+}
+
+.navbar ul li a:hover {
+  opacity: 0.8;
+}
+
+.navbar .actions {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.navbar .actions i {
+  color: var(--white);
+  cursor: pointer;
+  font-size: 24px;
+  padding: 6px;
+}
+
+.navbar .actions .account {
+  display: flex;
+  align-items: center;
+  gap: 2px;
+  cursor: pointer;
+}
+
+.navbar .actions .account img {
+  width: 100%;
+  height: 32px;
+  border-radius: 4px;
+}
+
+.navbar .actions .account i {
+  font-size: 12px;
+  color: var(--white);
+  cursor: inherit;
+}
+
+/* Animação para o campo de busca */
+.actions .search-field {
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+
+.actions .search-field i {
+  position: absolute;
+  left: 6px;
+  top: 6px;
+  padding: 0;
+}
+
+.actions .search-field input {
+  height: 34px;
+  padding-left: 34px;
+  background: none;
+  border: solid transparent 1px;
+  outline: none;
+  color: var(--white);
+  transition: 0.3s ease;
+  width: 10px;
+}
+
+.actions .search-field input:focus {
+  width: 215px;
+  background-color: black;
+  border: solid var(--white) 1px;
 }

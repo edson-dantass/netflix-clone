@@ -6,6 +6,11 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+
+    <link
       href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
       rel="stylesheet"
     />
@@ -13,6 +18,51 @@
     <title>Netflix Clone</title>
   </head>
   <body>
-    <h1>Netflix</h1>
+    <header class="main-header">
+      <div class="container">
+        <img src="./assets/netflix_full_logo.png" alt="Netflix" />
+        <nav class="navbar">
+          <ul>
+            <li class="active">
+              <a href="#"> Início </a>
+            </li>
+            <li>
+              <a href="#"> Séries </a>
+            </li>
+            <li>
+              <a href="#"> Filmes </a>
+            </li>
+            <li>
+              <a href="#"> Bombando </a>
+            </li>
+            <li>
+              <a href="#"> Minha lista </a>
+            </li>
+          </ul>
+          <div class="actions">
+            <div class="search-field">
+              <label for="main-search">
+                <i class="bx bx-search"></i>
+              </label>
+              <input
+                type="text"
+                id="main-search"
+                placeholder="Títulos, pessoas e gêneros"
+              />
+            </div>
+
+            <i class="bx bx-bell"></i>
+            <div class="account">
+              <img src="./assets/avatars/steve.jpeg" alt="Edson Dantas" />
+              <i class="bx bxs-down-arrow"></i>
+            </div>
+          </div>
+        </nav>
+      </div>
+    </header>
+    <video
+      src="blob:https://www.netflix.com/af9f04ca-eb8e-4324-8f8c-1af7e3f6e7c4"
+    ></video>
+    <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
   </body>
 </html>
