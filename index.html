@@ -1,94 +1,124 @@
 <!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link rel="shortcut icon" href="./assets/favicon.ico" type="image/x-icon" />
-    <link
-      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
-      rel="stylesheet"
-    />
+<html lang="pt-BR">
 
-    <link
-      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
-      rel="stylesheet"
-    />
-    <link rel="stylesheet" href="styles.css" />
-    <title>Início – Netflix</title>
-  </head>
-  <body>
-    <!-- Menu superior -->
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Netflix</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="./css/styles.css">
+    <link rel="stylesheet" href="./css/slides.css">
+</head>
+
+<body>
     <header class="main-header">
-      <div class="container">
-        <img src="./assets/netflix_full_logo.png" alt="Netflix" />
-        <nav class="navbar">
-          <ul>
-            <li class="active">
-              <a href="#">Início</a>
-            </li>
-            <li>
-              <a href="#">Séries</a>
-            </li>
-            <li>
-              <a href="#">Filmes</a>
-            </li>
-            <li>
-              <a href="#">Bombando</a>
-            </li>
-            <li>
-              <a href="#">Minha lista</a>
-            </li>
-          </ul>
-          <div class="actions">
-            <div class="search-field">
-              <label for="main-search">
-                <i class="bx bx-search"></i>
-              </label>
-              <input
-                type="text"
-                id="main-search"
-                placeholder="Títulos, pessoas e gêneros"
-              />
-            </div>
-
-            <i class="bx bx-bell"></i>
-            <div class="account">
-              <img src="./assets/avatars/steve.jpeg" alt="Edson Dantas" />
-              <i class="bx bxs-down-arrow"></i>
-            </div>
-          </div>
-        </nav>
-      </div>
-    </header>
-
-    <!-- Intro -->
-    <main class="intro">
-      <img
-        src="./assets/intro.png"
-        class="bg-image"
-        alt="Quatro Vidas de >um Cachorro"
-      />
-      <div class="bg-gradient"></div>
-      <div class="leading-container">
         <div class="container">
-          <div class="leading">
-            <img src="./assets/netflix_series.png" alt="Netflix Séries" />
-            <h1>Quatro Vidas de <br />um Cachorro</h1>
-            <p>
-              Um cão morre e reencarna várias vezes. Com diferentes donos, ele descobre lealdade, amor, dor e decepção.
-            </p>
-            <div class="leading-actions">
-              <button class="btn"><i class="bx bx-play"></i> Assistir</button>
-              <button class="btn secondary">
-                <i class="bx bx-error-circle"></i> Mais informações
-              </button>
-            </div>
-          </div>
+            <img src="/assets/netflix_full_logo.png" alt="">
+            <nav class="navbar">
+                <ul>
+                    <li><a href="#">Início</a></li>
+                    <li><a href="#">Séries</a></li>
+                    <li><a href="#">Bombando</a></li>
+                    <li><a href="#">Minha Lista</a></li>
+                </ul>
+                <div class="actions">
+                    <div class="search-field">
+                        <label for="main-search">
+                            <i class='bx bx-search'></i>
+                        </label>
+                        <input type="text" id="main-search" placeholder="Títulos, pessoas e gêneros">
+                    </div>
+                    <i class='bx bx-bell'></i>
+                    <div class="account">
+                        <img src="./assets/avatars/steve.jpeg" alt="Nome do usuário">
+                        <i class='bx bxs-down-arrow'></i>
+                        <div class="account-modal">
+                            <ul>
+                                <li>
+                                    <img src="./assets/avatars/wandinha.jpg" alt="Nome do usuário">
+                                    <span>Edson Dantas</span>
+                                </li>
+                                <li>
+                                    <img src="./assets/avatars/steve.jpeg" alt="Nome do usuário">
+                                    <span>Pedro</span>
+                                </li>
+                                <li>
+                                    <img src="./assets/avatars/wandinha.jpg" alt="Nome do usuário">
+                                    <span>Lucas</span>
+                                </li>
+                                <li>
+                                    <img src="./assets/avatars/steve.jpeg" alt="Nome do usuário">
+                                    <span>João</span>
+                                </li>
+                                <!-- Ações da conta -->
+                                <li>
+                                    <i class='bx bx-edit-alt'></i>
+                                    <span>Gerenciar Perfil</span>
+                                </li>
+                                <li>
+                                    <i class='bx bx-transfer'></i>
+                                    <span>Transferir Perfil</span>
+                                </li>
+                                <li>
+                                    <i class='bx bx-user'></i>
+                                    <span>Conta</span>
+                                </li>
+                                <li>
+                                    <i class='bx bx-help-circle'></i>
+                                    <span>Central de Ajuda</span>
+                                </li>
+                                <li>
+                                    <span>Sair da Netflix</span>
+                                </li>
+                            </ul>
+                            <i class='bx bxs-up-arrow'></i>
+                        </div>
+                    </div>
+                </div>
+            </nav>
         </div>
-      </div>
+    </header>
+    <main class="intro">
+        <img class="bg-intro" src="./assets/intro.png" alt="Quatro vidas de um cachorro">
+        <div class="bg-gradient"></div>
+        <div class="leading-container">
+            <div class="container">
+                <div class="leading">
+                    <img src="./assets/netflix_series.png" alt="Netflix Séries">
+                    <h1>Quatro Vidas de <br>um Cachorro</h1>
+                    <p>Um cão morre e reencarna várias vezes. Com diferentes donos,
+                        ele descobre lealdade, amor, dor e decepção.</p>
+                </div>
+                <div class="leading-actions">
+                    <button class="btn">
+                        <i class='bx bx-play'></i>
+                        Assistir
+                    </button>
+                    <button class="btn secondary">
+                        <i class='bx bx-info-circle'></i>
+                        Mais informações
+                    </button>
+                </div>
+            </div>
+        </div>
     </main>
-    <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
-  </body>
+
+    <!-- Slides -->
+
+    <section class="section-top">
+        <h1 class="title-section">Brasil: top 10 em séries hoje</h1>
+        <div class="slide">
+            
+        </div>
+    </section>
+
+
+    <script src="./js/app.js" type="module"></script>
+</body>
+
 </html>
